@@ -25,4 +25,4 @@ production:
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   database: blockmovie_production
-  
+
