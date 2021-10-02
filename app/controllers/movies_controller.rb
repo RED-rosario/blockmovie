@@ -1,4 +1,5 @@
 class MoviesController < ApplicationController
+  
   before_action :set_movie, only: %i[ show edit update destroy ]
 
   # GET /movies or /movies.json
@@ -8,6 +9,7 @@ class MoviesController < ApplicationController
 
   # GET /movies/1 or /movies/1.json
   def show
+
   end
 
   # GET /movies/new
@@ -64,6 +66,6 @@ class MoviesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def movie_params
-      params.require(:movie).permit(:title, :description)
+      params.require(:movie).permit(:title, :description, :images)
     end
 end
